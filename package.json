@@ -1,0 +1,26 @@
+{
+  "name": "11.6._Wlasne_Trello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dtrwoga/11.6._Wlasne_Trello.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dtrwoga/11.6._Wlasne_Trello/issues"
+  },
+  "homepage": "https://github.com/dtrwoga/11.6._Wlasne_Trello#readme"
+}

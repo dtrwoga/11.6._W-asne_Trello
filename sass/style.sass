@@ -1,0 +1,173 @@
+
+$headers-font-family: 'Sedgwick Ave', cursive
+$primary-font-family: 'Raleway', sans-serif
+$cards-color: #fff//white
+$btn-add-color1: #9ebdc0//blue
+$btn-add-color2: #73b9c0//darkblue
+$btn-delete-color1: #f0b3b0//pink
+$btn-delete-color2: #ee7388//red
+$font-color-black: #000
+$font-color-white: #fff
+
+*
+	box-sizing: border-box
+
+body
+	background-image: url("../images/background.jpg")
+   
+.container
+	position: relative
+	max-width: 1200px
+	margin: 0 auto
+	
+h1
+	font-family: $headers-font-family
+	font-size: 48px
+	color: $font-color-black
+	text-align: center
+	letter-spacing: 5px
+	font-weight: 300
+	margin: 40px 20px
+	text-transform: uppercase
+	
+.create-column// guzik Add a column
+	position: absolute
+	width: 180px
+	right: 20px
+	top: 10px
+	padding: 0 30px
+	height: 30px
+	line-height: 18px
+	background-color: $btn-add-color1
+	font-size: 18px
+	font-family: $primary-font-family
+	border: none
+	border-radius: 5px
+	color: #fff
+	cursor: pointer
+	outline: none
+	box-shadow: 3px 6px 12px 2px rgba(0, 0, 0, 0.7)
+	&:hover
+		background-color: $btn-add-color2
+
+.column-container
+	position: relative
+	display: flex
+	flex-flow: row wrap
+    width: 100%
+    max-width: 100%
+	.column
+    	align-self: flex-start
+    	position: relative
+    	width: calc(33.3% - 30px)
+    	max-width: calc(33.3% - 30px)
+    	margin: 15px
+    	border-radius: 10px
+    	box-shadow: 1px 23px 18px -3px rgba(102,101,102,0.78);
+    	padding-bottom: 45px
+    	background-color: $cards-color
+    	h2
+    		text-align: center
+    		font-family: $headers-font-family
+    		font-weight: 300
+    		font-size: 24px
+    		line-height: 24px
+    		text-transform: uppercase
+    		color: $font-color-black
+    		background-color: $cards-color
+    		border-radius: 10px 10px 0 0
+    		margin: 0 0 10px 0
+    		height: 40px
+    		padding-top: 20px
+    		word-wrap: break-word
+    	.add-card //guzik dodający kartę
+	    	width: 100%
+	    	height: 40px
+	    	line-height: 40px
+	    	position: absolute
+	    	bottom: 0
+	    	margin: 0
+	    	text-align: center
+    		font-family: $primary-font-family
+    		font-weight: 300
+    		color: $font-color-white
+    		background-color: $btn-add-color1
+    		border-radius: 0 0 10px 10px 
+    		cursor: pointer
+	    	&:hover
+		    	background-color: $btn-add-color2
+
+.column-card-list
+	list-style: none
+	padding: 5px 5px
+	width: 100%
+	max-width: 100%
+	margin: 30px 0 30px 0
+	li
+		max-width: 100%
+		width: 100%
+		align-self: flex-start
+		position: relative
+		line-height: 30px
+		cursor: pointer
+		padding: 0px 0px
+		margin: 0px 0
+		p
+			font-family: $primary-font-family
+			position: relative
+			margin-left: 10px
+			padding: 0
+			width: 80%
+			word-wrap: break-word
+		.btn-delete-task
+			top: 0
+			float: right
+			margin: 0
+	
+.btn-delete
+	position: absolute
+	padding: 5px
+	margin: 5px
+	right: 10px
+	top: 17px
+	border: none
+	border-radius: 50%
+	width: 30px
+	height: 30px
+	font-size: 14px
+	line-height: 14px
+	background-color: $btn-delete-color1
+	cursor: pointer
+	&:hover
+		background-color: $btn-delete-color2
+		i.fa
+			background-color: $btn-delete-color2
+	i
+		font-size: 14px
+		line-height: 14px
+		border-radius: 50%
+		background-color: $btn-delete-color1
+		display: block
+		position: relative
+		color: #fff
+		&:hover
+			background-color: $btn-delete-color2
+
+.card-placeholder
+	background-color: $btn-add-color1
+	height: 40px
+	border: 1px dashed $btn-add-color2
+	opacity: .3
+	
+.column-placeholder
+	position: relative
+	width: calc(33.3% - 30px
+	max-width: calc(33.3% - 30px)
+	margin: 15px
+	border-radius: 10px
+	padding-bottom: 45px
+	background-color: $btn-add-color1
+	border: 1px dashed $btn-add-color2
+	height: auto
+	opacity: .3
+
